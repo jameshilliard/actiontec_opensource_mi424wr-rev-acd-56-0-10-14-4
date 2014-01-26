@@ -1,0 +1,16 @@
+RGSRC=../../../
+include $(RGSRC)/envir.mak
+
+SUBDIRS+=$(if $(CONFIG_ATM),atm)
+SUBDIRS+=$(if $(CONFIG_ATM_NULL),atm_null)
+SUBDIRS+=$(if $(CONFIG_RG_KMONTE),kmonte)
+SUBDIRS+=$(if $(CONFIG_RG_RGLOADER)$(CONFIG_RG_RGLOADER_CLI_CMD),krgldr)
+SUBDIRS+=$(if $(CONFIG_RG_OPENSSL_COMMON),sha)
+SUBDIRS+=$(if $(CONFIG_RG_USB),usb)
+SUBDIRS+=$(if $(CONFIG_EXTRA_ALLOC),nommu-slab-opt)
+
+JPKG_EXPORTED_DIR_SRC+=$(if $(CONFIG_ATM),atm)
+JPKG_EXPORTED_DIR_SRC+=$(if $(CONFIG_RG_KMONTE),kmonte)
+JPKG_EXPORTED_DIR_SRC+=$(if $(CONFIG_RG_USB),usb)
+
+include $(RGMK)

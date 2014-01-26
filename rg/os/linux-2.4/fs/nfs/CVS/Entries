@@ -1,0 +1,18 @@
+/Makefile/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/dir.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/file.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/flushd.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/inode.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/mount_clnt.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/nfs2xdr.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/nfs3proc.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/nfs3xdr.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/nfsroot.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/pagelist.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/proc.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/read.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/symlink.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/unlink.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/write.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+/xattr.c/1.1.1.1/Fri Jan 20 03:16:27 2006//
+D

@@ -1,0 +1,18 @@
+/Config.in/1.1.1.1/Fri Jan 20 03:16:14 2006//
+/Makefile/1.1.1.1/Fri Jan 20 03:16:14 2006//
+/acpi_ksyms.c/1.1.1.1/Fri Jan 20 03:16:14 2006//
+/driver.c/1.1.1.1/Fri Jan 20 03:16:14 2006//
+/os.c/1.1.1.1/Fri Jan 20 03:16:14 2006//
+D/debugger////
+D/dispatcher////
+D/events////
+D/executer////
+D/hardware////
+D/include////
+D/kdb////
+D/namespace////
+D/ospm////
+D/parser////
+D/resources////
+D/tables////
+D/utilities////

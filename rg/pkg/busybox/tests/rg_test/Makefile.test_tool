@@ -1,0 +1,70 @@
+RGSRC = ../../../../
+include $(RGSRC)/envir.mak
+
+TARGET=test_tool
+OTHER_TARGETS=.strip
+O_OBJS=test_tool.o util.o
+
+ifneq ($(findstring nommu,$(ARCH)),)
+# MMUless system cannot make strip on flat binary
+STRIP=true
+endif
+
+GLOBAL_INPUTS = file1.txt file2.txt
+PRP_INPUTS = sort.prp sort_r.prp tail_f1.prp tail_f1_f2.prp \
+    tail_n3.prp head_f1.prp head_f1_f2.prp head_n3.prp
+INPUTS = $(GLOBAL_INPUTS) $(PRP_INPUTS)
+
+INPUTS_VAL = $(INPUTS:%=%.val)
+
+CLEAN += *.o *.val file2val bb_sort all_tests.h all_inputs.h $(OTHER_TARGETS)
+
+GLOBAL_INPUTS_H = $(GLOBAL_INPUTS:%=%.h)
+
+include $(RGMK)
+
+all_inputs.h: $(GLOBAL_INPUTS_H)
+	@echo > all_inputs.h
+	@for i in $(GLOBAL_INPUTS_H) ; do\
+	  echo \#include \"$$i\" >> all_inputs.h ;\
+	done 
+
+$(PRP_INPUTS): bb_sort $(GLOBAL_INPUTS)
+	./bb_sort file1.txt > sort.prp
+	./bb_sort -r file1.txt > sort_r.prp
+	tail file1.txt > tail_f1.prp
+	tail file1.txt file2.txt > tail_f1_f2.prp
+	tail -n 3 file1.txt > tail_n3.prp
+	head file1.txt > head_f1.prp
+	head file1.txt file2.txt > head_f1_f2.prp
+	head -n 3 file1.txt > head_n3.prp
+
+$(INPUTS_VAL): $(INPUTS) file2val
+
+$(INPUTS_VAL) : %.val : %
+	./file2val $< > $@
+
+TESTS=cat.h mkdir.h ln.h cp.h mv.h echo.h zip_gunzip_zcat.h tar.h ls.h sort.h \
+    head.h tail.h rmdir.h rm.h sh.h kill.h cut.h sleep.h dirname.h pwd.h \
+    touch.h basename.h du.h find.h usleep.h grep.h which.h expr.h mknod.h \
+    tee.h date.h killall.h chmod_chown_chgrp.h hostname.h df.h
+
+
+all_tests.h: $(TESTS)
+	@echo > all_tests.h
+	@for i in $(TESTS) ; do\
+	  echo \#include \"$$i\" >> all_tests.h ;\
+	done 
+
+file2val: file2val.c
+	$(HOSTCC) -o file2val file2val.c
+	
+test_tool.o: $(INPUTS_VAL) test_tool.h all_tests.h all_inputs.h ../../Config.h
+util.o: test_tool.h
+
+bb_sort: sort.c ../../sort.c ../../utility.c
+	    $(HOSTCC) -I../../../include/ -I ../../ $^ -o $@
+
+.strip: $(TARGET)
+	$(STRIP) $^ > $@
+	

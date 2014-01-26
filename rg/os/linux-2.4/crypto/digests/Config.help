@@ -1,0 +1,99 @@
+# David Bryson <mutex@mac.com> Thu, Mar 21, 2002
+# Config.help descriptions for CryptoAPI digest functions
+
+MD5 digest
+CONFIG_DIGEST_MD5
+  If you answer yes to this option, the MD5(Message Digest 5) digest 
+  will be compiled into your kernel.  MD5 is an improved version of MD4
+  designed by Ron Rivest, it produces a 128-bit "hash value" from an in-
+  put of arbitrary length.  The effective strength of MD5 is 80bits.
+  There are no restrictions on the use of the MD5 algorithm.  The Crypto-
+  API implementation of MD5 is released under the GPL.
+
+  See also <http://www.faqs.org/rfcs/rfc1321.html>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called digest-md5.o. If you want to compile it as a
+  module, say M here and read <file:Documentation/modules.txt>.
+
+SHA1 digest
+CONFIG_DIGEST_SHA1
+  If you answer yes to this option the SHA1(Secure Hash Algorithm 1) will
+  be compiled into your kernel.  SHA1 was designed with NIST and the NSA
+  for use with the Digital Signature Standard.  It produces a 160-bit 
+  hash value from an input or arbitrary length.  The effective strength of
+  SHA1 is 80bits.  There are no restrictions on the use of the SHA1 algorithm.
+  The CryptoAPI implementation of SHA1 is released under the GPL.
+
+  See also <http://csrc.nist.gov/publications/fips/fips180-1/fips180-1.pdf>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called digest-sha1.o. If you want to compile it as a
+  module, say M here and read <file:Documentation/modules.txt>.
+
+RIPEMD160 digest
+CONFIG_DIGEST_RIPEMD160
+  If you answer yes to this option the RIPEMD-160(RACE Integrity Primitives Evaluation Message Digest algorithm with 160bit digests) will
+  be compiled into your kernel.  RIPEMD160 was designed by Hans Dobbertin, Antoon Bosselaers, and Bart Preneel
+  for use with the European Union's project RIPE.  It produces a 160-bit 
+  hash value from an input or arbitrary length.  The effective strength of
+  RIPEMD160 is 80bits.  There are no restrictions on the use of the RIPEMD160 algorithm.
+  The CryptoAPI implementation of RIPEMD160 is released under the GPL.
+
+  See also <http://www.esat.kuleuven.ac.be/~bosselae/ripemd160.html>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called digest-ripemd160.o. If you want to compile it as a
+  module, say M here and read <file:Documentation/modules.txt>.
+
+SHA256 digest
+CONFIG_DIGEST_SHA256
+  If you answer yes to this option the SHA256(Secure Hash Algorithm , 256bits) will
+  be compiled into your kernel.  SHA256 was designed with NIST and the NSA
+  for use with the Digital Signature Standard and the Advanced Encryption Standard
+  with 128bit keys.  It produces a 256-bit hash value from an input or arbitrary length.
+  The effective strength of SHA256 is 128bits.  There are no restrictions on the use of the
+  SHA256 algorithm.  The CryptoAPI implementation of SHA256 is released under the GPL.
+
+  See also <http://csrc.nist.gov/encryption/shs/sha256-384-512.pdf>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called digest-sha256.o. If you want to compile it as a
+  module, say M here and read <file:Documentation/modules.txt>.
+
+SHA384 digest
+CONFIG_DIGEST_SHA384
+  If you answer yes to this option the SHA384(Secure Hash Algorithm , 384bits) will
+  be compiled into your kernel.  SHA384 was designed with NIST and the NSA
+  for use with the Digital Signature Standard and the Advanced Encryption Standard
+  with 192bit keys.  It produces a 384-bit hash value from an input or arbitrary length.
+  The effective strength of SHA384 is 192bits.  There are no restrictions on the use of the
+  SHA384 algorithm.  The CryptoAPI implementation of SHA384 is released under the GPL.
+
+  See also <http://csrc.nist.gov/encryption/shs/sha256-384-512.pdf>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called digest-sha384.o. If you want to compile it as a
+  module, say M here and read <file:Documentation/modules.txt>.
+
+SHA512 digest
+CONFIG_DIGEST_SHA512
+  If you answer yes to this option the SHA512(Secure Hash Algorithm , 512bits) will
+  be compiled into your kernel.  SHA512 was designed with NIST and the NSA
+  for use with the Digital Signature Standard and the Advanced Encryption Standard
+  with 256bit keys.  It produces a 512-bit hash value from an input or arbitrary length.
+  The effective strength of SHA512 is 256bits.  There are no restrictions on the use of the
+  SHA512 algorithm.  The CryptoAPI implementation of SHA512 is released under the GPL.
+
+  See also <http://csrc.nist.gov/encryption/shs/sha256-384-512.pdf>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called digest-sha512.o. If you want to compile it as a
+  module, say M here and read <file:Documentation/modules.txt>.
+

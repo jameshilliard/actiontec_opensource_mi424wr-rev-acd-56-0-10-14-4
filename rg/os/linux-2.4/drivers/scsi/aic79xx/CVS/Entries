@@ -1,0 +1,23 @@
+/CHANGELOG/1.1.1.1/Fri Jan 20 03:16:10 2006//
+/Config.in/1.1.1.1/Fri Jan 20 03:16:10 2006//
+/Makefile/1.1.1.1/Fri Jan 20 03:16:09 2006//
+/aic79xx.h/1.1.1.1/Fri Jan 20 03:16:09 2006//
+/aic79xx.reg/1.1.1.1/Fri Jan 20 03:16:10 2006//
+/aic79xx.seq/1.1.1.1/Fri Jan 20 03:16:09 2006//
+/aic79xx_core.c/1.1.1.1/Fri Jan 20 03:16:09 2006//
+/aic79xx_inline.h/1.1.1.1/Fri Jan 20 03:16:09 2006//
+/aic79xx_osm.c/1.1.1.1/Fri Jan 20 03:16:09 2006//
+/aic79xx_osm.h/1.1.1.1/Fri Jan 20 03:16:10 2006//
+/aic79xx_osm_pci.c/1.1.1.1/Fri Jan 20 03:16:10 2006//
+/aic79xx_pci.c/1.1.1.1/Fri Jan 20 03:16:09 2006//
+/aic79xx_proc.c/1.1.1.1/Fri Jan 20 03:16:09 2006//
+/aic79xx_reg.h/1.1.1.1/Fri Jan 20 03:16:10 2006//
+/aic79xx_reg_print.c/1.1.1.1/Fri Jan 20 03:16:10 2006//
+/aic79xx_seq.h/1.1.1.1/Fri Jan 20 03:16:09 2006//
+/aiclib.c/1.1.1.1/Fri Jan 20 03:16:09 2006//
+/aiclib.h/1.1.1.1/Fri Jan 20 03:16:09 2006//
+/cam.h/1.1.1.1/Fri Jan 20 03:16:09 2006//
+/queue.h/1.1.1.1/Fri Jan 20 03:16:09 2006//
+/scsi_iu.h/1.1.1.1/Fri Jan 20 03:16:10 2006//
+/scsi_message.h/1.1.1.1/Fri Jan 20 03:16:10 2006//
+D/aicasm////

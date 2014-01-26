@@ -1,0 +1,56 @@
+busybox (0.50-1) unstable; urgency=low
+
+  * Tons on improvements all around -- See changelog for details.
+  * Fix malformed Build-Depends (closes: #86930)
+  * grep has worked for some time now (closes: #81084)
+  * init compiles with DEBUG_INIT enabled (closes: #85794)
+  * md5sum no longer displays filename when reading stdin (closes: #81283)
+  * lsmod, rmmod, and insmod are no longer enabled (closes: #85642)
+  * busybox and buxybox-static now conflict/replace each other (closes: #80421)
+
+ -- Erik Andersen <andersee@debian.org>  Thu, 15 Mar 2001 14:45:00 -0700
+
+busybox (0.49-1) unstable; urgency=low
+
+  * Lots more source updates and bug fixes.  See changelog for details.
+
+ -- Erik Andersen <andersee@debian.org>  Sat, 27 Jan 2001 01:45:53 -0700
+
+busybox (0.48-1) unstable; urgency=low
+
+  * Lots more source updates and bug fixes.  See changelog for details.
+  * Now includes .udeb support for the debian-installer.  The .udeb 
+    probably needs some more work, but this should be a good start.
+
+ -- Erik Andersen <andersee@debian.org>  Wed, 13 Dec 2000 08:36:07 -0700
+
+busybox (0.47-1) unstable; urgency=low
+
+  * New version released.  See changelog for details.
+
+ -- Erik Andersen <andersee@debian.org>  Mon, 25 Sep 2000 23:00:56 -0600
+
+busybox (0.46-1) unstable; urgency=low
+
+  * New version released.  See changelog for details.
+
+ -- Erik Andersen <andersee@debian.org>  Tue, 11 Jul 2000 12:15:44 -0600
+
+busybox (0.45-1) unstable; urgency=low
+
+  * First attempt at packaging BusyBox as a .deb.  This has been in 
+    in the Debian boot-floppies CVS tree forever.  Hopefully, having it as a
+    standalone app will make life easier for me, the debian-installer team, and
+    everyone else as well...
+  * I have created a busybox-static that can be used as a rescue shell when you 
+    hose your system.  Just invoke "busybox sh" to fir up the shell.  This has
+    every app provided by busybox staically linked in.  There have been several
+    times in the past that I would have loved to have this sitting on my system
+    (i.e. when libc gets screwed up.)
+
+ -- Erik Andersen <andersee@debian.org>  Tue, 27 Jun 2000 12:26:41 -0600
+
+Local variables:
+mode: debian-changelog
+add-log-mailing-address: "andersee@debian.org"
+End:

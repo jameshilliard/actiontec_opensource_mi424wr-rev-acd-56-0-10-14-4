@@ -1,0 +1,44 @@
+include ti_wpa_export.mak
+
+CFLAGS=-D_LIBC_REENTRANT -Wall -g -EB -mgp32 -mcpu=r4000 -mips2 -non_shared -DRW_MULTI_THREAD -D_REENTRANT -funroll-loops -fno-for-scope -DMIPSEB -msoft-float -DCPU=RC32364 
+
+CFLAGS+=-G 0 -ansi -nostdinc
+
+CFLAGS+=-DNO_ASM -DNO_BF -DNO_CAST -DNO_MDC2 -DNO_MD2 -DNO_RC2 -DNO_RC5 \
+  -DNO_IDEA -DTERMIO
+
+CFLAGS+=-DB_ENDIAN
+
+PLATFORM=vxworks
+CFLAGS+=-DVXWORKS -DCONFIG_RG_TARGET_VXWORKS
+
+BN_ASM=bn_asm.o
+DES_ENC=des_enc.o fcrypt_b.o
+BF_ENC=bf_enc.o
+CAST_ENC=c_enc.o
+RC4_ENC=rc4_enc.o
+RC5_ENC=rc5_enc.o
+
+# XXX OpenSSL's headers are not strict ANSI (do not have full prototypes).
+# Therefore we must disable the strict prototype checking only for this package
+#CFLAGS=$(filter-out -Wstrict-prototypes,$(CFLAGS))
+
+INCLUDES=-I$(OPENSSL_DIR)/../include/openssl -I$(OPENSSL_DIR)/crypto \
+  -I$(WPA_DIR)/include -I$(WIND_BASE)/target/h
+
+CFLAGS+=$(INCLUDES)
+
+CC=ccmips
+AR=armips
+ARFLAGS=crus
+
+%.o : %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+all: libcrypto.a libssl.a
+
+libcrypto.a: $(CRYPTO_FILES)
+	$(AR) $(ARFLAGS) $@ $^
+
+libssl.a: $(SSL_FILES)
+	$(AR) $(ARFLAGS) $@ $^

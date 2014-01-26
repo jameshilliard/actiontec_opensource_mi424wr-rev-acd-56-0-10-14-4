@@ -1,0 +1,22 @@
+/COPYING/1.1.1.1/Fri Jan 20 03:15:59 2006//
+/CREDITS/1.1.1.1/Fri Jan 20 03:15:59 2006//
+/MAINTAINERS/1.1.1.1/Fri Jan 20 03:15:59 2006//
+/Makefile/1.8/Fri Aug  3 17:58:10 2007//
+/README/1.1.1.1/Fri Jan 20 03:15:59 2006//
+/REPORTING-BUGS/1.1.1.1/Fri Jan 20 03:15:59 2006//
+/Rules.make/1.1.1.1/Fri Jan 20 03:15:59 2006//
+/envir.subdirs.mak/1.1.1.1/Fri Jan 20 03:15:59 2006//
+/export.c/1.1.1.1/Fri Jan 20 03:15:59 2006//
+D/Documentation////
+D/arch////
+D/crypto////
+D/drivers////
+D/fs////
+D/include////
+D/init////
+D/ipc////
+D/kernel////
+D/lib////
+D/mm////
+D/net////
+D/scripts////

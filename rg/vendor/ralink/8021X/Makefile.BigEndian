@@ -1,0 +1,22 @@
+
+EXEC = rt2500apd
+
+ifndef CFLAGS
+CFLAGS = -MMD -O2 -Wall -g
+endif
+
+#CFLAGS +=  -DDBG 
+
+OBJS = rt2500apd.o eloop.o eapol_sm.o radius.o md5.o config.o ieee802_1x.o sta_info.o radius_client.o
+
+all: $(EXEC)
+
+$(EXEC): $(OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(OBJS) $(LDLIBS)
+
+romfs:
+	$(ROMFSINST) /bin/$(EXEC)
+
+clean:
+	-rm -f $(EXEC) *.o *.d
+

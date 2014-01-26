@@ -1,0 +1,26 @@
+/.indent.pro/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/Makefile/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/__getgrent.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/__getpwent_r.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/__getspent_r.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/__sgetspent_r.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/config.h/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/fgetgrent.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/fgetpwent.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/fgetspent.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/getgrgid.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/getgrnam.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/getpw.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/getpwnam.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/getpwuid.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/getspnam.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/getspuid.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/grent.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/initgroups.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/lckpwdf.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/putpwent.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/putspent.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/pwent.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/sgetspent.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/spent.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+D

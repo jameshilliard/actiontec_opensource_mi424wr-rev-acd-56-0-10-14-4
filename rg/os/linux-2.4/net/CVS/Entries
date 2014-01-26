@@ -1,0 +1,35 @@
+/.cvsignore/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/Config.in/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/Makefile/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/README/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/TUNABLE/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/netsyms.c/1.2/Wed May  9 02:17:41 2007//
+/socket.c/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/sysctl_net.c/1.1.1.1/Fri Jan 20 03:16:22 2006//
+D/802////
+D/8021q////
+D/appletalk////
+D/atm////
+D/ax25////
+D/bluetooth////
+D/bridge////
+D/core////
+D/decnet////
+D/econet////
+D/ethernet////
+D/ipv4////
+D/ipv6////
+D/ipx////
+D/irda////
+D/key////
+D/khttpd////
+D/lapb////
+D/netlink////
+D/netrom////
+D/packet////
+D/rose////
+D/sched////
+D/sunrpc////
+D/unix////
+D/wanrouter////
+D/x25////

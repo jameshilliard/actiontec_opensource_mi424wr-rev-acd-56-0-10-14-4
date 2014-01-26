@@ -1,0 +1,32 @@
+/.cvsignore/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/Configure/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/Lindent/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/MAKEDEV.ide/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/Makefile/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/Menuconfig/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/README.Menuconfig/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/checkconfig.pl/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/checkhelp.pl/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/checkincludes.pl/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/docgen/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/docproc.c/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/gen-all-syms/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/header.tk/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/kernel-doc/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/makelst/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/mkdep.c/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/mkspec/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/mkversion/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/patch-kernel/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/pathdown.sh/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/split-include.c/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/split-man/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/tail.tk/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/tkcond.c/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/tkgen.c/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/tkparse.c/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/tkparse.h/1.1.1.1/Fri Jan 20 03:16:24 2006//
+/ver_linux/1.1.1.1/Fri Jan 20 03:16:24 2006//
+D/cramfs////
+D/ksymoops////
+D/lxdialog////

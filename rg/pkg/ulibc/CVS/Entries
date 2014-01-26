@@ -1,0 +1,26 @@
+/.cvsignore/1.1.1.1/Fri Jan 20 03:15:29 2006//
+/COPYING.LIB/1.1.1.1/Fri Jan 20 03:15:29 2006//
+/Changelog/1.1.1.1/Fri Jan 20 03:15:29 2006//
+/Changelog.full/1.1.1.1/Fri Jan 20 03:15:29 2006//
+/Config/1.2/Mon May  5 21:57:37 2008//
+/INSTALL/1.1.1.1/Fri Jan 20 03:15:29 2006//
+/Makefile/1.1.1.1/Fri Jan 20 03:15:29 2006//
+/README/1.1.1.1/Fri Jan 20 03:15:29 2006//
+/Rules.mak/1.1.1.1/Fri Jan 20 03:15:29 2006//
+/TODO/1.1.1.1/Fri Jan 20 03:15:29 2006//
+/envir.subdirs.mak/1.1.1.1/Fri Jan 20 03:15:29 2006//
+/license_code/1.1.1.1/Fri Jan 20 03:15:29 2006//
+/ulibc.mak/1.1.1.1/Fri Jan 20 03:15:29 2006//
+D/debian////
+D/docs////
+D/extra////
+D/include////
+D/ldso////
+D/libc////
+D/libcrypt////
+D/libm////
+D/libnsl////
+D/libpthread////
+D/libresolv////
+D/libutil////
+D/test////

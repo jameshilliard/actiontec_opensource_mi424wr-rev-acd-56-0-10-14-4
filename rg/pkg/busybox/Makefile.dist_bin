@@ -1,0 +1,50 @@
+RGSRC=../..
+include $(RGSRC)/envir.mak
+
+# Makefile for busybox
+#
+# Copyright (C) 1999,2000,2001 Erik Andersen <andersee@debian.org>
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+#
+
+PROG      := busybox
+VERSION   := 0.50
+BUILDTIME := $(shell TZ=UTC date --utc "+%Y.%m.%d-%H:%M%z")
+export VERSION
+
+ifndef $(PREFIX)
+    PREFIX = `pwd`/_install
+endif
+
+TARGET=busybox
+
+ifndef CONFIG_OPENRG
+  TARGET+=init
+endif
+
+OTHER_TARGETS = busybox.links 
+
+CLEAN += busybox.links core $(OBJECTS) $(LIBRARIES) $(PWD_LIB)
+
+include $(RGMK)
+
+ramdisk::
+	$(call RAMDISK_MKDIR_FUNC,$(RAMDISK_RW_DIR)/bin)
+	$(call RAMDISK_MKDIR_FUNC,$(RAMDISK_RO_DIR)/bin)
+	$(MAKE) install 
+
+install:
+	@./install.sh $(PREFIX)

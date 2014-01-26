@@ -1,0 +1,27 @@
+/Config.in/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/Makefile/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-cd.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-cd.h/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-default.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-disk.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-dma.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-floppy.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-geometry.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-io.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-iops.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-lib.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-pnp.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-probe-mini.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-probe.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-proc.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-tape.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-taskfile.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide-timing.h/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/ide_modes.h/1.1.1.1/Fri Jan 20 03:16:02 2006//
+/setup-pci.c/1.1.1.1/Fri Jan 20 03:16:02 2006//
+D/arm////
+D/legacy////
+D/pci////
+D/ppc////
+D/raid////

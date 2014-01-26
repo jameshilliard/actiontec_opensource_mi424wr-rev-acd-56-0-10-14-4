@@ -1,0 +1,14 @@
+/Makefile/1.2/Fri Dec 29 01:43:01 2006//
+/dbg_io.c/1.2/Fri Dec 29 01:43:01 2006//
+/int-handler.S/1.2/Fri Dec 29 01:43:01 2006//
+/irq.c/1.2/Fri Dec 29 01:43:01 2006//
+/it8172_cir.c/1.2/Fri Dec 29 01:43:01 2006//
+/it8172_pci.c/1.2/Fri Dec 29 01:43:01 2006//
+/it8172_rtc.c/1.2/Fri Dec 29 01:43:01 2006//
+/it8172_setup.c/1.2/Fri Dec 29 01:43:01 2006//
+/lpc.c/1.2/Fri Dec 29 01:43:01 2006//
+/pmon_prom.c/1.2/Fri Dec 29 01:43:01 2006//
+/puts.c/1.2/Fri Dec 29 01:43:01 2006//
+/reset.c/1.2/Fri Dec 29 01:43:01 2006//
+/time.c/1.2/Fri Dec 29 01:43:01 2006//
+D

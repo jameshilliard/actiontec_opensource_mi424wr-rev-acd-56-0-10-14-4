@@ -1,0 +1,24 @@
+if [ "$CONFIG_CIPHERS" != "n" ]; then
+	comment '128 bit blocksize'
+	dep_tristate ' AES (aka Rijndael) cipher' CONFIG_CIPHER_AES $CONFIG_CRYPTO
+	dep_tristate ' MARS cipher' CONFIG_CIPHER_MARS $CONFIG_CRYPTO
+	dep_tristate ' RC6 cipher' CONFIG_CIPHER_RC6 $CONFIG_CRYPTO
+	dep_tristate ' Serpent cipher' CONFIG_CIPHER_SERPENT $CONFIG_CRYPTO
+	dep_tristate ' Twofish cipher' CONFIG_CIPHER_TWOFISH $CONFIG_CRYPTO
+	comment '64 bit blocksize'
+	dep_tristate ' 3DES cipher' CONFIG_CIPHER_3DES $CONFIG_CRYPTO
+	dep_tristate ' Blowfish cipher' CONFIG_CIPHER_BLOWFISH $CONFIG_CRYPTO
+	dep_tristate ' CAST5 cipher' CONFIG_CIPHER_CAST5 $CONFIG_CRYPTO
+	dep_tristate ' GOST cipher' CONFIG_CIPHER_GOST $CONFIG_CRYPTO
+	dep_tristate ' IDEA cipher' CONFIG_CIPHER_IDEA $CONFIG_CRYPTO
+	dep_tristate ' RC5 cipher' CONFIG_CIPHER_RC5 $CONFIG_CRYPTO
+	comment 'Deprecated'
+	dep_tristate ' NULL cipher (NO CRYPTO)' CONFIG_CIPHER_NULL $CONFIG_CRYPTO
+	dep_tristate ' DUMMY cipher (DEPRECATED)' CONFIG_CIPHER_DUMMY $CONFIG_CRYPTO
+	dep_tristate ' DES cipher (DEPRECATED)' CONFIG_CIPHER_DES $CONFIG_CRYPTO
+	dep_tristate ' DFC cipher (Suspected Attack)' CONFIG_CIPHER_DFC $CONFIG_CRYPTO
+	dep_tristate ' Old (mutated-endianess) Blowfish cipher (DEPRECATED)' CONFIG_CIPHER_BLOWFISH_OLD $CONFIG_CRYPTO
+
+fi
+
+#EOF

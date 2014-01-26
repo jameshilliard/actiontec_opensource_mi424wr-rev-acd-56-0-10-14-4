@@ -1,0 +1,13 @@
+# $Id: Config.in,v 1.1.1.1 2006/01/20 03:16:22 zjjiang Exp $
+
+if [ "$CONFIG_CRYPTODEV" != "n" ]; then
+	dep_tristate ' Loop Crypto support' CONFIG_CRYPTOLOOP $CONFIG_CRYPTO $CONFIG_BLK_DEV_LOOP
+	dep_mbool '  Atomic Loop Crypto' CONFIG_CRYPTOLOOP_ATOMIC $CONFIG_CRYPTOLOOP
+	dep_mbool '  Loop IV hack' CONFIG_CRYPTOLOOP_IV_HACK $CONFIG_CRYPTOLOOP
+	dep_mbool '  Loop Crypto Debugging' CONFIG_CRYPTOLOOP_DEBUG $CONFIG_CRYPTOLOOP
+
+	dep_tristate ' IPSEC tunneling (ipsec_tunnel) support' CONFIG_IPSEC_TUNNEL $CONFIG_CRYPTO $CONFIG_INET
+
+fi
+
+# EOF

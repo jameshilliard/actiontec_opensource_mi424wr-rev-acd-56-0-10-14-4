@@ -1,0 +1,11 @@
+# $Id: Config.in,v 1.1.1.1 2006/01/20 03:16:22 zjjiang Exp $
+
+if [ "$CONFIG_DIGESTS" != "n" ]; then
+	dep_tristate ' MD5 digest' CONFIG_DIGEST_MD5 $CONFIG_CRYPTO
+	dep_tristate ' SHA1 digest' CONFIG_DIGEST_SHA1 $CONFIG_CRYPTO
+	dep_tristate ' RIPEMD160 digest' CONFIG_DIGEST_RIPEMD160 $CONFIG_CRYPTO
+	dep_tristate ' SHA256 digest' CONFIG_DIGEST_SHA256 $CONFIG_CRYPTO
+	dep_tristate ' SHA384 digest' CONFIG_DIGEST_SHA384 $CONFIG_CRYPTO
+	dep_tristate ' SHA512 digest' CONFIG_DIGEST_SHA512 $CONFIG_CRYPTO
+fi
+

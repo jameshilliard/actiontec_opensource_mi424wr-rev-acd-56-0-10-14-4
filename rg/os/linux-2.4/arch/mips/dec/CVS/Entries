@@ -1,0 +1,12 @@
+/Makefile/1.2/Fri Dec 29 01:47:18 2006//
+/int-handler.S/1.2/Fri Dec 29 01:47:18 2006//
+/ioasic-irq.c/1.2/Fri Dec 29 01:47:18 2006//
+/kn02-irq.c/1.2/Fri Dec 29 01:47:18 2006//
+/promcon.c/1.2/Fri Dec 29 01:47:18 2006//
+/reset.c/1.2/Fri Dec 29 01:47:18 2006//
+/rtc-dec.c/1.2/Fri Dec 29 01:47:18 2006//
+/setup.c/1.2/Fri Dec 29 01:47:18 2006//
+/time.c/1.2/Fri Dec 29 01:47:18 2006//
+/wbflush.c/1.2/Fri Dec 29 01:47:18 2006//
+D/boot////
+D/prom////

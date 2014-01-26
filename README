@@ -1,0 +1,141 @@
+BUILDING FIRMWARE FOR ACTIONTEC MI424WR Router Versions A,C,D
+=============================================================
+
+* How to install MI424WR source code onto Linux workstation
+* How to build image file that can be loaded onto a Actiontec MI424WR
+* How to upgrade the MI424WR with the new firmware image file.
+
+NOTE: The following procedures are known to work with recent 
+versions of Fedora, like versions 10, 11 or 12. Along with the 
+Basic Fedora Install you will want to add the Software Developement 
+packages that are provided with Fedora. 
+
+The Actiontec MI424WR Rev. A,C,D Source Code, i386-jungo-linux-gnu 
+compiler, armv5b-toolchain and jpkg package can be obtained
+from the Actiontec support website at http://opensource.actiontec.com.
+
+
+1. (Download source code, compilers and toolchain (4 files))
+
+    actiontec_opensource_mi424wr-rev-acd-56-0-10-14-4.tgz
+    i386-jungo-linux-gnu.tar.gz
+    armv5b-jungo-linux-gnu.tar.gz
+    
+2. (Copy or Move the source code to the HOME directory.)
+
+    $ cp actiontec_opensource_mi424wr-rev-acd-56-0-10-14-4.tgz $HOME
+
+3. (Change to the Home directory) 
+
+    $ cd $HOME
+
+4. (Extract the contents of the source code)
+
+    $ tar zxvf actiontec_opensource_mi424wr-rev-acd-56-0-10-14-4.tgz
+
+    IMPORTANT: Extracting the source code creates the directory 
+    "opensource-mi424wr-rev-acd-56-0-10-14-4" and the subdirectory 
+    "rg". The bulk of the source code resides in "rg". The Makefiles 
+    in the distribution expects that Jungo's openrg GCC 3.3.2 based 
+    compiler will be located at "/usr/local/openrg". Both the x86 
+    (i386-jungo-linux-gnu) and MIPS (armv5b-jungo-linux-gnu) 
+    compilers should be installed to the "openrg" directory.
+
+5.  (The following commands assume that the User is still in the 
+    Home directory.) 
+
+6.  (Change to Super User for the following commands, requires the 
+    root password)
+
+    $ su
+    Password: <Enter Root password>
+
+7. (Create the "openrg" directory at "/usr/local")
+
+   # mkdir /usr/local/openrg
+
+8. (Move the compiler, toolchain to the "openrg" directory.)
+
+   # mv i386-jungo-linux-gnu.tar.gz /usr/local/openrg
+   # mv armv5b-jungo-linux-gnu.tar.gz /usr/local/openrg
+
+9. (Change to the "openrg" directory)
+
+   # cd /usr/local/openrg
+
+10. (Extract the contents of the i386-jungo-linux-gnu compiler)
+
+   # tar zxvf i386-jungo-linux-gnu.tar.gz 
+   
+11. (Extract the contents of the armv5b-jungo-linux-gnu toolchain)
+
+   # tar zxvf armv5b-jungo-linux-gnu.tar.gz 
+
+12.(Change to the original Home directory, the place-holder called 
+   <account>, represents the name of the account you were using 
+   before you changed to Super User, earlier in these directions. 
+   If your login is "bobby", then there will be a directory within 
+   the Home directory named "bobby", and that is where you will 
+   find the "/opensource-mi424wr-rev-acd-56-0-10-14-4/rg" directory. 
+   If so, the command would look like this: 
+   "cd /home/bobby/opensource-mi424wr-rev-acd-56-0-10-14-4/rg".)
+
+   # cd $HOME/opensource-mi424wr-rev-acd-56-0-10-14-4/rg
+
+13. (The next 4 commands will build the new image.)
+
+   # make config CONFIG_RG_GPL=y DIST=MI424WR LIC=../jpkg_actiontec_gpl.lic 
+   
+   # make 
+   
+   # make ramdisk
+   
+   # make -C os openrg.img
+
+(The New Image file will be in the following location when the build completes.)
+ 
+$HOME/opensource-mi424wr-rev-acd-56-0-10-14-4/rg/build.MI424WR/os/openrg.img
+
+
+
+HOW TO UPLOAD THE IMAGE TO THE ROUTER
+=====================================
+
+IMPORTANT: In order to load the firmware onto the router, 
+the user will need a serial debug board and a TFTP server.
+
+1. Set up the TFTP server, copy the newly created "openrg.img" 
+   file from the build to TFTP server folder.
+
+2. Boot up the Router with serial debug cable connected to the PC. 
+
+3. Set PC IP address to 192.168.1.10
+
+4. Press ESC continuously to stop at the bootloader prompt. 
+   You will get the following prompt:
+
+   Actiontec Home Router boot> 
+
+5. Load the firmware to the Flash using this command:
+
+   load -u tftp://<TFTP Server IP>/<Image name on TFTP Server>
+
+   (For example: )  
+   
+        load -u tftp://192.168.1.10/openrg.img
+
+6. Issue 'reboot' command at bootloader prompt. 
+   Or, power cycle the router.
+
+
+PLEASE NOTE: The machine-readable software source code provided 
+here is for programmers who may wish to alter or customize the 
+code, and typically will not be of use to the vast majority of 
+consumers. The software source code provided here is subject to
+Version 2 of the GPL or other GPL or LGPL licenses which are 
+all included in the download and are available below and also at 
+"http://www.gnu.org/licenses/" and as such, the software source 
+code is distributed WITHOUT ANY WARRANTY and subject to the 
+copyrights of the authors. Compiling errors due to lack of 
+public libraries/tools in the customer's specific platform/OS 
+are the responsibility of the user of this GPL source code.

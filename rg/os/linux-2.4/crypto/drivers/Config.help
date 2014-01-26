@@ -1,0 +1,46 @@
+# $Id: Config.help,v 1.1.1.1 2006/01/20 03:16:22 zjjiang Exp $
+
+Generic cryptogrpahic filter for loop device driver
+CONFIG_CRYPTOLOOP
+  If you answer yes to this option, the loop driver will be able to
+  use all cryptographic ciphers selected below.
+
+  This loop filter will use the ciphers in CBC-mode which is more
+  secure than ECB-mode.  This module will also initialize the CBC-mode
+  of the cipher with the block-number of the block being encrypted.
+
+  Make sure you have patched your loop driver otherwise this filter
+  won't compile. See <file:Documentation/crypto/cryptoloop.txt> for
+  more information (or alternatively try the IV Hack option below).
+
+  *WARNING* Due to the broken IV metric in the 2.4.x kernel series,
+  this filter is not compatible with the on-disc format of encrypted
+  volumes encrypted up to version 2.4.3 of the international patch! 
+  You will have to convert your "old" encrypted volumes to the new IV
+  metric.
+
+Use atomic ciphers for cryptoloop
+CONFIG_CRYPTOLOOP_ATOMIC
+  When enabled, atomic versions of the ciphers are used; this may have
+  a slight negative impact on latency.
+
+Loop IV hack
+CONFIG_CRYPTOLOOP_IV_HACK 
+  *WARNING* This is just a hack; please read 
+  <file:crypto/drivers/cryptoloop.c> before using.
+
+Cryptoloop debugging support
+CONFIG_CRYPTOLOOP_DEBUG
+  When enabled, debugging code is compiled in, which is disabled by 
+  default. please read <file:crypto/drivers/cryptoloop.c> for
+  more information
+
+IPSEC tunneling 
+CONFIG_IPSEC_TUNNEL
+  Tunneling means encapsulating data of one protocol type within
+  another protocol and sending it over a channel that understands the
+  encapsulating protocol. This particular tunneling driver implements
+  encrypted IPSEC based tunneling.
+  Please see <http://ringstrom.mine.nu/ipsec_tunnel/>.
+
+# EOF

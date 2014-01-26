@@ -1,0 +1,24 @@
+/Makefile/1.1.1.1/Fri Jan 20 03:15:31 2006//
+D/assert////
+D/ctype////
+D/dirent////
+D/error////
+D/file////
+D/fnmatch////
+D/ftw////
+D/glob////
+D/gnu////
+D/internals////
+D/locale////
+D/mntent////
+D/pthread////
+D/regex////
+D/search////
+D/statfs////
+D/syslog////
+D/sysvipc////
+D/time////
+D/ttyent////
+D/utmp////
+D/wchar////
+D/wctype////

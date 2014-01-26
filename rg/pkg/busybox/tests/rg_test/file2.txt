@@ -1,0 +1,10 @@
+
+Sunnyvale, Calif., November 8, 2001 - Jungo LTD.,a
+leading provider of residential gateway software and technologies,today
+announced the launch of OpenRG Version 1.0, a comprehensive and secure
+embedded software solution for Integrated Access Devices (IADs) / Residential
+Gateways (RGs). After extensive Beta testing, OpenRG Version 1.0 is a 
+production ready, highly robust software solution, ready to go to market.
+
+Thats it, End of file2.txt
+

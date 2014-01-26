@@ -1,0 +1,15 @@
+/.cvsignore/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/LOCALES/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/Makefile/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/README/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/gen_collate.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/gen_ldc.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/gen_locale.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/gen_mmap.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/gen_wc8bit.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/gen_wctype.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/lmmtolso.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/locale_mmap.h/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/tst_nl_langinfo.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+D/charmaps////
+D/collation////

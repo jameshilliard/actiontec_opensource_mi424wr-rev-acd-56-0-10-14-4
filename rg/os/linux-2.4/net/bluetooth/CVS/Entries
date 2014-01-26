@@ -1,0 +1,13 @@
+/Config.in/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/Makefile/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/af_bluetooth.c/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/hci_conn.c/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/hci_core.c/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/hci_event.c/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/hci_sock.c/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/l2cap.c/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/lib.c/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/sco.c/1.1.1.1/Fri Jan 20 03:16:22 2006//
+/syms.c/1.1.1.1/Fri Jan 20 03:16:22 2006//
+D/bnep////
+D/rfcomm////

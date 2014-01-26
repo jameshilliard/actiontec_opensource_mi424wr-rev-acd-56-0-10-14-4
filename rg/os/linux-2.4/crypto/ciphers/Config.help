@@ -1,0 +1,264 @@
+# David Bryson <mutex@mac.com>  Wed, Mar 20, 2002
+# Config.help descriptions for CryptoAPI cipher functions
+
+AES (aka Rijndael) cipher
+CONFIG_CIPHER_AES
+  If you answer yes to this option, the Rijndael cipher will be
+  compiled into your kernel.  Rijndael was submitted to the AES(Advanced
+  Encryption Standard) cipher competition and won, becoming the AES sta-
+  ndard.  It supports key sizes of 128, 192, and 256 bits which executes
+  10, 12, and 14 rounds respectively.
+  This cipher is freely available for anyone to use.  And the CryptoAPI 
+  implementation is under a BSD-style license of unrestricted, free use.
+
+  See also <http://www.esat.kuleuven.ac.be/~rijmen/rijndael/>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-aes.o. If you want to compile it as a
+  module, say M here and read <file:Documentation/modules.txt>.
+
+Twofish cipher
+CONFIG_CIPHER_TWOFISH
+  If you answer yes to this option, the Twofish cipher will be compiled
+  into your kernel.  Twofish was submitted as an AES(Advanced Encryption
+  Standard) candidate cipher by researchers at CounterPane Systems.  It
+  is a 16 round block cipher supporting key sizes of 128, 192, and 256 
+  bits.
+  Twofish is unpatented and is free to use.  The CryptoAPI 
+  implementation is release to public domain.
+
+  See also <http://www.counterpane.com/twofish.html>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-twofish.o. If you want to compile it 
+  as a module, say M here and read <file:Documentation/modules.txt>.
+
+MARS cipher
+CONFIG_CIPHER_MARS
+  If you answer yes to this option, the MARS cipher will be compiled
+  into your kernel.  MARS was submitted as an AES(Advanced Encryption
+  Standard) candidate cipher by researchers at IBM.  It is a variable
+  key size 32 round cipher, although only 128, 192, and 256 bits are
+  supported.
+  The MARS algorithm is owned under patent by IBM, but they have a royal-
+  ty free license for it.  The CryptoAPI impelementation is free for use
+  by all.
+
+  See also <http://www.research.ibm.com/security/mars.html>
+  and <http://www.tivoli.com/news/press/pressreleases/en/2000/mars.html>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-mars.o. If you want to compile it as
+  a module, say M here and read <file:Documentation/modules.txt>.
+
+# Finish description here, xpdf doesn't render this correctly
+RC6 cipher
+CONFIG_CIPHER_RC6
+  If you answer yes to this option, the RC6(Rivest Cipher 6) cipher will
+  be compiled into your kernel.  RC6 was submitted as an AES(Advanced
+  Encryption Standard) candidate cipher by researchers at RSA Security.
+  The RC6 algorithm is owned and patented by RSA Security.
+# find accurate licensing info
+
+  See also <http://www.rsasecurity.com/rsalabs/rc6/>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-rc6.o. If you want to compile it as a
+  module, say M here and read <file:Documentation/modules.txt>.
+
+Serpent cipher
+CONFIG_CIPHER_SERPENT
+  If you answer yes to this option, the Serpent cipher will be compiled
+  into your kernel.  Serpent was submitted as an AES(Advanced Encryption
+  Standard) candidate cipher ranking second to rijndael.  It is a 32 rou-
+  nd cipher with 128, 192, and 256 bit key sizes.
+  Serpent is released under the public domain for use by anyone.  The 
+  CryptoAPI implementation is released under the GPL.
+
+  See also <http://www.cl.cam.ac.uk/~rja14/serpent.html>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-serpent.o. If you want to compile it
+  as a module, say M here and read <file:Documentation/modules.txt>.
+
+DFC cipher
+CONFIG_CIPHER_DFC
+  If you answer yes to this option the DFC(Decorrolated Fast Cipher)
+  will be compiled into your kernel.  DFC was submitted as an AES(Advan-
+  ced Encryption Standard) candidate cipher with 8 rounds and a key size
+  of 128, 192, and 256 bits.
+  DFC is currently owned under patent WO9820643 in the French National
+  Institute for Industrial Property.  The CryptoAPI implementation is
+  released under the same restrictions as the DFC cipher is.
+# find more info about the license, info is hard to find :-(
+  DFC has a known attack see
+    <http://csrc.nist.gov/encryption/aes/round1/conf2/papers/harvey.pdf>
+
+  See also <http://lasecwww.epfl.ch/dfc.shtml>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-dfc.o. If you want to compile it as a
+  module, say M here and read <file:Documentation/modules.txt>.
+
+# find documentation finish brief
+CAST5 cipher
+CONFIG_CIPHER_CAST5
+  If you answer yes to this option the CAST5 cipher will be compiled
+  into your kernel.  CAST was designed by Carlisle Adams and Stafford Ta-
+  vares, CAST5 is a version of the original CAST cipher modified for 128-
+  bit block size.
+  CAST5 is availiable royalty free for commercial and non-commercial use.
+  The CryptoAPI implementation is released under the GPL.
+
+  See also <http://www.ietf.org/rfc/rfc2144.txt>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-cast5.o. If you want to compile it as
+  a module, say M here and read <file:Documentation/modules.txt>.
+
+DES cipher
+CONFIG_CIPHER_DES
+  If you answer yes to this option the DES(Data Encryption Standard)
+  cipher will be compiled into your kernel.  This cipher was designed
+  by IBM and the NSA based on the Lucifer cipher designed by IBM.  
+  It supports a 56-bit key size and is a 16 round cipher.
+  It should be noted that DES has a keylength of only 56 bits, which
+  is insufficient to provide real security today.
+  The DES algorithm has no restrictions on its use.  The CryptoAPI impl-
+  ementation of DES is released under the GPL.
+
+  See also <http://www.ietf.org/rfc/rfc2405.txt>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-des.o. If you want to compile it as a
+  module, say M here and read <file:Documentation/modules.txt>.
+
+# find a good 3des link, or just repeat the DES rfc
+3DES cipher
+CONFIG_CIPHER_3DES
+  If you answer yes to this option the 3DES cipher will be compiled into
+  your kernel.  This cipher is a modification of the DES algorithm which
+  increases the effective keysize to 112-bits.  Instead of using one 56-
+  bit key(DES) you can use either 2 or 3 56-bit keys.
+  If E(K) is the original DES algorithm then 3DES is:
+	E(K1)->D(K2)->E(K3)
+	or with 2 keys
+	E(K1)->D(K2)->E(K1)
+  Where K1 != K2 != K3 or K1 != K2.  3DES is 3x slower than DES.
+  If K1 = K2 = K3 this breaks down to normal DES with 3x the runtime.
+  The CryptoAPI implementation of 3DES is released under the GPL.
+
+  See also <http://www.ietf.org/rfc/rfc2405.txt>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-3des.o. If you want to compile it
+  as a module, say M here and read <file:Documentation/modules.txt>.
+
+GOST cipher
+CONFIG_CIPHER_GOST
+  If you answer yes to this option the GOST(Soviet Encryption Algorithm)
+  cipher will be compiled into your kernel.  This cipher
+  It is an 8 round, 64-bit block, 256-bit key round algorithm support-
+  GOST was heavily used in the former Soviet Bloc and still has many users
+  in that area.  It is free for any use - aka public domain.
+
+  <http://vipul.net/gost/>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-gost.o. If you want to compile it as a
+  module, say M here and read <file:Documentation/modules.txt>.
+
+IDEA cipher
+CONFIG_CIPHER_IDEA
+  If you answer yes to this option the IDEA(International Data Encrypt-
+  ion Algorithm) cipher will be compiled into your kernel.  This cipher
+  is unlike most other symmetric ciphers in that it does not use any 
+  type of S-box for data obscuring.  It is an 8 round algorithm support-
+  ing a 128-bit key size.
+  IDEA is patented in Switzerland, Europe, and the United States.  It is
+  free for any non-commercial use.
+
+  See also <http://home.ecn.ab.ca/~jsavard/crypto/co0404.htm>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-idea.o. If you want to compile it as a
+  module, say M here and read <file:Documentation/modules.txt>.
+
+Blowfish cipher
+CONFIG_CIPHER_BLOWFISH
+  If you answer yes to this option the Blowfish cipher will be compiled
+  into your kernel.  Blowfish was designed by Bruce Schneier as a free
+  replacement for DES and IDEA.  It is a 16 round cipher supporting 128,
+  160, 192, 256 key sizes.
+  The CryptoAPI implementation of Blowfish is released under the GPL.
+
+  See also <http://www.counterpane.com/blowfish.html>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-blowfish.o. If you want to compile it
+  as a module, say M here and read <file:Documentation/modules.txt>.
+
+RC5 cipher
+CONFIG_CIPHER_RC5
+  If you answer yes to this option the RC5 cipher will be compiled into
+  your kernel.  RC5 was designed Ronald Rivest as a drop in replacement
+  for DES.  It is a 16 round cipher supporting 128, 192, and 256 bit key
+  sizes.
+  RC5 is patented and owned by RSA Security. The CryptoAPI implementation
+  is free for all to use.  
+
+  See also <http://www.ietf.org/rfc/rfc2040.txt>
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-rc5.o. If you want to compile it as a
+  module, say M here and read <file:Documentation/modules.txt>.
+
+Old (mutated-endianess) Blowfish cipher
+CONFIG_CIPHER_BLOWFISH_OLD
+  If you answer yes to this option the Blowfish(old) cipher will be comp-
+  iled into your kernel.  This is an older CryptoAPI implementation of
+  Blowfish that only works on little-endian systems.  It is left for bac-
+  kward compatability and will be removed in the near future.
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-blowfish_old.o. If you want to 
+  compile it as a module, say M here and read 
+  <file:Documentation/modules.txt>.
+
+DUMMY cipher
+CONFIG_CIPHER_DUMMY
+  If you answer yes to this option the DUMMY cipher will be compiled into
+  your kernel.  This is a template for a new cipher to be implemented.
+  It currently does no encryption.
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-dummy.o. If you want to compile it as
+  a module, say M here and read <file:Documentation/modules.txt>.
+
+NULL cipher
+CONFIG_CIPHER_NULL
+  If you answer yes to this option the NULL cipher will be compiled into
+  your kernel.  This is a template for a new cipher to be implemented, and
+  for completeness with the IPsec RFCs.
+  
+  *It does no encryption!*
+
+  This driver is also available as a module ( = code which can be
+  inserted in and removed from the running kernel whenever you want).
+  The module will be called cipher-null.o. If you want to compile it as
+  a module, say M here and read <file:Documentation/modules.txt>.

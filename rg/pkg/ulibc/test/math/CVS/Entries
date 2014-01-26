@@ -1,0 +1,12 @@
+/.cvsignore/1.1.1.1/Fri Jan 20 03:15:33 2006//
+/Makefile/1.1.1.1/Fri Jan 20 03:15:33 2006//
+/gen-libm-test.pl/1.1.1.1/Fri Jan 20 03:15:33 2006//
+/libm-test.inc/1.1.1.1/Fri Jan 20 03:15:33 2006//
+/rint.c/1.1.1.1/Fri Jan 20 03:15:33 2006//
+/test-double.c/1.1.1.1/Fri Jan 20 03:15:33 2006//
+/test-float.c/1.1.1.1/Fri Jan 20 03:15:33 2006//
+/test-idouble.c/1.1.1.1/Fri Jan 20 03:15:33 2006//
+/test-ifloat.c/1.1.1.1/Fri Jan 20 03:15:33 2006//
+/test-ildoubl.c/1.1.1.1/Fri Jan 20 03:15:33 2006//
+/test-ldouble.c/1.1.1.1/Fri Jan 20 03:15:33 2006//
+D

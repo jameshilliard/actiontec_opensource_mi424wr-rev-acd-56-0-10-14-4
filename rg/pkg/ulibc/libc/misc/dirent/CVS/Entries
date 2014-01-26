@@ -1,0 +1,17 @@
+/Makefile/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/alphasort.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/alphasort64.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/closedir.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/dirfd.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/dirstream.h/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/opendir.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/readdir.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/readdir64.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/readdir64_r.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/readdir_r.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/rewinddir.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/scandir.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/scandir64.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/seekdir.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+/telldir.c/1.1.1.1/Fri Jan 20 03:15:32 2006//
+D
